@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Online</title>
+    <link rel="stylesheet" href="Css/Order_Online.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2><span>Order Online</span></h2>
+        <p>Use this form to submit a request for our fresh bakery products.</p>        
+        <form action="#" id="OrderOnline" method="post">
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name*" class="required" required>
+                <span class="error-message" id="name-error" style="display:none;">Name is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email*" class="required" required>
+                <span class="error-message" id="email-error" style="display:none;">Invalid email format.</span>
+            </div>
+            <div class="form-group">
+                <label for="mobile"></label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Mobile*" class="required" required>
+                <span class="error-message" id="mobile-error" style="display:none;">Invalid mobile number.</span>
+            </div>
+            <div class="form-group">
+                <label for="address"></label>
+                <input type="text" id="address" name="address" placeholder="Address*" class="required" required>
+                <span class="error-message" id="address-error" style="display:none;">Address is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="date"></label>
+                <input type="date" id="date" name="date" class="required" required>
+                <span class="error-message" id="date-error" style="display:none;">Date is required.</span>
+            </div>
+            <div class="form-group">
+                <label for="time"></label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="products"></label>
+                <input list="products" name="products" placeholder="Products*" class="required" required>
+                <datalist id="products">
+                    <option value="Sourdough">Sourdough - $3.99</option>
+                    <option value="Maple Oat Muffin">Maple Oat Muffin - $6.95</option>
+                    <option value="Amaretti Cookie">Amaretti Cookie - $12.25</option>
+                    <option value="Croissant">Croissant - $3.50</option>
+                    <option value="Black Forest">Black Forest - $34.00</option>
+                    <option value="Ciabatta">Ciabatta - $4.50</option>
+                </datalist>
+                <span class="error-message" id="products-error" style="display:none;">Product selection is required.</span>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Order</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Js/Order_Online.js"></script>
+</body>
+</html>
